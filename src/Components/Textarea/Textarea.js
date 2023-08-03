@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function Textarea() {
+function Textarea({className, onChange}) {
   return (
-    <div><textarea /></div>
-  )
+    <div>
+      <textarea className={className} onChange={onChange} placeholder="Ejemplo M:5 S:10 L:25 " />
+    </div>
+  );
 }
 
-export default Textarea
+export default Textarea;

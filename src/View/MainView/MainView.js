@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../../index.css";
 import Networks from "../../Components/Networks/Networks";
-import Image from "../../Assets/logo_Mesa de trabajo 1.png";
 import HeadersLink from "../../Components/HeadersLink/HeadersLink";
 import HeadersLinkMovil from "../../Components/HeadersLink/HeadersLinkMovil";
 import { IconsClose, IconsMenu } from "../../Components/Icons/Icons";
@@ -17,12 +16,9 @@ function MainView() {
         <Networks />
       </div>
       <div className="flex items-center justify-between  inset-y-0 bottom-0 h-20 bg-gradient-to-tr p-2 via-slate-500 to-transparent">
-        <img
-          className=" w-40 border-2 border-white rounded-lg cursor-pointer"
-          src={Image}
-          alt="Logo"
-          onClick={() => navigation("/")}
-        />
+      <h1 className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer" onClick={() => navigation("/")}>
+            FANS-SERI
+          </h1>
         <div className="hidden md:flex text-cyan-100 text-2xl font-llora relative">
           <HeadersLink />
         </div>

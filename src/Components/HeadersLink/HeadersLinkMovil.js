@@ -16,16 +16,10 @@ function HeadersLinkMovil() {
       Realizar pedido
     </a>
     <a
-      href="/products"
+      href="/Information"
       className="p-2 border-b hover:text-cyan-600 border-x-gray-200"
     >
-      Galeria
-    </a>
-    <a
-      href="/contact"
-      className="p-2 border-b hover:text-cyan-600 border-x-gray-200"
-    >
-      Redes y Ubicación
+      Sobre nosotros
     </a>
   </div>
   )

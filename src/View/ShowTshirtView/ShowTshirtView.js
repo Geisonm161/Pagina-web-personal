@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Networks from "../../Components/Networks/Networks";
-import Image from "../../Assets/logo_Mesa de trabajo 1.png";
 import Model1 from "../../Assets/model1.png";
 import Model2 from "../../Assets/model2.png";
 import Model3 from "../../Assets/model3.png";
@@ -49,12 +48,9 @@ function ShowTshirtView() {
         <Networks />
       </div>
       <div className="flex items-center justify-between  inset-y-0 bottom-0 h-20 bg-gradient-to-tr p-2 via-slate-500 to-transparent">
-        <img
-          className=" w-40 border-2 border-white rounded-lg cursor-pointer"
-          src={Image}
-          alt="Logo"
-          onClick={() => navigation("/")}
-        />
+      <h1 className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer" onClick={() => navigation("/")}>
+            FANS-SERI
+          </h1>
         <div className="hidden md:flex text-cyan-100 text-2xl font-llora relative">
           <HeadersLink />
         </div>
@@ -91,23 +87,24 @@ function ShowTshirtView() {
 
       {Article === "Hoodie" && (
         <div className="flex flex-wrap justify-center">
-          <img src={Hoodie1} alt="t-shirt" className="w-96 m-4" />
-          <img src={Hoodie2} alt="t-shirt" className="w-96 m-4" />
-          <img src={Hoodie3} alt="t-shirt" className="w-96 m-4" />
-          <img src={Hoodie4} alt="t-shirt" className="w-96 m-4" />
-          <img src={Hoodie5} alt="t-shirt" className="w-96 m-4" />
-          <img src={Hoodie6} alt="t-shirt" className="w-96 m-4" />
+          <img src={Hoodie1} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Hoodie2} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Hoodie3} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Hoodie4} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Hoodie5} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Hoodie6} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Hoodie7} alt="t-shirt" className="w-96 m-4 p-4" />
         </div>
       )}
 
       {Article === "Polo" && (
         <div className="flex flex-wrap justify-center">
-          <img src={Polo1} alt="t-shirt" className="w-96 m-4" />
-          <img src={polo2} alt="t-shirt" className="w-96 m-4" />
-          <img src={Polo3} alt="t-shirt" className="w-96 m-4" />
-          <img src={polo4} alt="t-shirt" className="w-96 m-4" />
-          <img src={polo5} alt="t-shirt" className="w-96 m-4" />
-          <img src={Polo6} alt="t-shirt" className="w-96 m-4" />
+          <img src={Polo1} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
+          <img src={polo2} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
+          <img src={Polo3} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
+          <img src={polo4} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
+          <img src={polo5} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
+          <img src={Polo6} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
 
           
         </div>
@@ -115,12 +112,12 @@ function ShowTshirtView() {
 
       {Article === "Suera" && (
         <div className="flex flex-wrap justify-center">
-          <img src={Suera1} alt="t-shirt" className="w-96" />
-          <img src={Suera2} alt="t-shirt" className="w-96" />
-          <img src={Suera3} alt="t-shirt" className="w-96" />
-          <img src={Suera4} alt="t-shirt" className="w-96" />
-          <img src={Suera5} alt="t-shirt" className="w-96" />
-          <img src={Suera6} alt="t-shirt" className="w-96" />
+          <img src={Suera1} alt="t-shirt" className="w-96 p-4" />
+          <img src={Suera2} alt="t-shirt" className="w-96 p-4" />
+          <img src={Suera3} alt="t-shirt" className="w-96 p-4" />
+          <img src={Suera4} alt="t-shirt" className="w-96 p-4" />
+          <img src={Suera5} alt="t-shirt" className="w-96 p-4" />
+          <img src={Suera6} alt="t-shirt" className="w-96 p-4" />
         </div>
       )}
     </div>

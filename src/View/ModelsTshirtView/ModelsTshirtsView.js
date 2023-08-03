@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Networks from "../../Components/Networks/Networks";
-import Image from "../../Assets/logo_Mesa de trabajo 1.png";
 import ModelsTshirt from "../../Assets/Model-variedad-tshirt.png";
 import ModelsSuera from "../../Assets/Model-black-suera.png";
 import ModelsHoodie from "../../Assets/Model-black-hoodie.png";
@@ -16,17 +15,14 @@ function ModelsTshirtsView() {
   const navigation = useNavigate();
 
   return (
-    <div className=" bg-fixed bg-cover bg-center min-h-screen bg-gradient-to-r from-indigo-500 ">
+    <div className=" bg-fixed bg-cover bg-center min-h-screen bg-gradient-to-r from-indigo-500 pb-7 ">
       <div className=" flex items-center justify-between h-14 bg-black opacity-80 px-2">
         <Networks />
       </div>
       <div className="flex items-center justify-between  inset-y-0 bottom-0 h-20 bg-gradient-to-tr p-2 via-slate-500 to-transparent">
-        <img
-          className=" w-40 border-2 border-white rounded-lg cursor-pointer"
-          src={Image}
-          alt="Logo"
-          onClick={() => navigation("/")}
-        />
+      <h1 className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer" onClick={() => navigation("/")}>
+            FANS-SERI
+          </h1>
         <div className="hidden md:flex text-cyan-100 text-2xl font-llora relative">
           <HeadersLink />
         </div>
