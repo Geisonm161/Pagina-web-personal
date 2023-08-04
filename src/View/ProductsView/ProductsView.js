@@ -5,6 +5,7 @@ import HeadersLink from "../../Components/HeadersLink/HeadersLink";
 import { IconsClose, IconsMenu } from "../../Components/Icons/Icons";
 import { useNavigate } from "react-router-dom";
 import HeadersLinkMovil from "../../Components/HeadersLink/HeadersLinkMovil";
+import Logo from "../../Assets/logo-fans-seri-01.png";
 
 const ProductosView = () => {
   const [changeIcons, setChangeIcons] = useState();
@@ -16,12 +17,13 @@ const ProductosView = () => {
         <Networks />
       </div>
       <div className="flex items-center justify-between  inset-y-0 bottom-0 h-20 bg-gradient-to-tr p-2 via-slate-500 to-transparent">
-        <h1
-          className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer"
+        <img
+          src={Logo}
+          alt="Logo"
+          className=" px-2 border-2 border-black  inline-block w-40 font-serif rounded-xl font-semibold md:w-48 cursor-pointer hover:w-52"
           onClick={() => navigation("/")}
-        >
-          FANS-SERI
-        </h1>
+        />
+
         <div className="hidden md:flex ">
           <HeadersLink routeProductos={true} />
         </div>
@@ -57,5 +59,5 @@ const ProductosView = () => {
       </div>
     </div>
   );
-}
+};
 export default ProductosView;

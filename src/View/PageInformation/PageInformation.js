@@ -4,6 +4,7 @@ import HeadersLink from "../../Components/HeadersLink/HeadersLink";
 import { IconsClose, IconsMenu } from "../../Components/Icons/Icons";
 import { useNavigate } from "react-router-dom";
 import HeadersLinkMovil from "../../Components/HeadersLink/HeadersLinkMovil";
+import Logo from "../../Assets/logo-fans-seri-01.png";
 
 const PageInformation = () => {
   const [changeIcons, setChangeIcons] = useState();
@@ -15,9 +16,12 @@ const PageInformation = () => {
         <Networks />
       </div>
       <div className="flex items-center justify-between  inset-y-0 bottom-0 h-20 bg-gradient-to-tr p-2 via-slate-500 to-transparent">
-          <h1 className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer" onClick={() => navigation("/")}>
-            FANS-SERI
-          </h1>
+        <img
+          src={Logo}
+          alt="Logo"
+          className=" px-2 border-2 border-black  inline-block w-40 font-serif rounded-xl font-semibold md:w-48 cursor-pointer hover:w-52"
+          onClick={() => navigation("/")}
+        />
 
         <div className="hidden md:flex text-cyan-100 text-2xl font-llora relative">
           <HeadersLink routePageInfo={true} />
@@ -34,9 +38,11 @@ const PageInformation = () => {
         <HeadersLinkMovil />
       </div>
       <div className="flex justify-center">
-        <h1 className=" px-2 text-black border-4 border-black m-8 inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl">
-          FANS-SERI
-        </h1>
+        <img
+          src={Logo}
+          alt="Logo"
+          className=" px-2 border-2 border-black m-10 inline-block w-48 font-serif rounded-xl font-semibold md:w-60 cursor-pointer"
+        />
       </div>
       <div className="flex justify-center">
         <p className="flex justify-center items-center w-3/4 cursor-pointer ">
@@ -59,6 +65,6 @@ const PageInformation = () => {
       </div>
     </div>
   );
-}
+};
 
 export default PageInformation;

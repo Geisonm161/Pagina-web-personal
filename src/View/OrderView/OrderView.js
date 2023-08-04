@@ -10,6 +10,7 @@ import Buttons from "../../Components/Buttons/Buttons";
 import Textarea from "../../Components/Textarea/Textarea";
 import { setItem } from "../../services/servicesLocalStorage/servicesLocalStorage";
 import Input from "../../Components/Input/Input";
+import Logo from "../../Assets/logo-fans-seri-01.png";
 
 const OrderView = () => {
   const [changeIcons, setChangeIcons] = useState();
@@ -183,12 +184,12 @@ const OrderView = () => {
         <Networks />
       </div>
       <div className="flex items-center justify-between  inset-y-0 bottom-0 h-20 bg-gradient-to-tr p-2 via-slate-500 to-transparent rounded-2xl">
-        <h1
-          className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer"
+        <img
+          src={Logo}
+          alt="Logo"
+          className=" px-2 border-2 border-black  inline-block w-40 font-serif rounded-xl font-semibold md:w-48 cursor-pointer hover:w-52"
           onClick={() => navigation("/")}
-        >
-          FANS-SERI
-        </h1>
+        />
         <div className="hidden md:flex text-white text-2xl font-llora relative">
           <HeadersLink routeOrder={true} />
         </div>
@@ -274,6 +275,6 @@ const OrderView = () => {
       </div>
     </div>
   );
-}
+};
 
 export default OrderView;
