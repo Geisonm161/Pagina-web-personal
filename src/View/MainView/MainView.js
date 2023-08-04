@@ -6,7 +6,7 @@ import HeadersLinkMovil from "../../Components/HeadersLink/HeadersLinkMovil";
 import { IconsClose, IconsMenu } from "../../Components/Icons/Icons";
 import { useNavigate } from "react-router-dom";
 
-function MainView() {
+const MainView = ()=> {
   const [changeIcons, setChangeIcons] = useState();
   const navigation = useNavigate();
 

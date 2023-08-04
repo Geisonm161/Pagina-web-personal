@@ -6,7 +6,7 @@ import { IconsClose, IconsMenu } from "../../Components/Icons/Icons";
 import { useNavigate } from "react-router-dom";
 import HeadersLinkMovil from "../../Components/HeadersLink/HeadersLinkMovil";
 
-function ProductosView() {
+const ProductosView = () => {
   const [changeIcons, setChangeIcons] = useState();
   const navigation = useNavigate();
 
@@ -37,7 +37,7 @@ function ProductosView() {
       >
         <HeadersLinkMovil />
       </div>
-      <h1 className=" flex justify-center text-gray-800 mt-5 text-5xl font-llora">
+      <h1 className=" flex justify-center text-gray-800 mt-5 md:text-4xl text-3xl font-llora">
         -_Productos_-
       </h1>
       <div

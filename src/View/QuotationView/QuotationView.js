@@ -2,7 +2,7 @@ import React from "react";
 import { getItem } from "../../services/servicesLocalStorage/servicesLocalStorage";
 import Buttons from "../../Components/Buttons/Buttons";
 
-function QuotationView() {
+const QuotationView = () => {
   const datosStorage = getItem(process.env.REACT_APP_NAME_DATA_QUOTATION);
 
   const numberTotal = datosStorage.valueTotal * datosStorage.amount;

@@ -36,21 +36,25 @@ import HeadersLink from "../../Components/HeadersLink/HeadersLink";
 import { IconsClose, IconsMenu } from "../../Components/Icons/Icons";
 import { useNavigate, useParams } from "react-router-dom";
 import HeadersLinkMovil from "../../Components/HeadersLink/HeadersLinkMovil";
-function ShowTshirtView() {
+
+const ShowTshirtView = () => {
   const [changeIcons, setChangeIcons] = useState();
   const navigation = useNavigate();
   const { Article } = useParams();
   console.log(Article);
 
   return (
-    <div className=" bg-fixed bg-cover bg-center min-h-screen bg-gradient-to-r from-indigo-500">
+    <div className=" bg-fixed bg-cover bg-center min-h-screen bg-gradient-to-r from-indigo-500 pb-10">
       <div className=" flex items-center justify-between h-14 bg-black opacity-80 px-2">
         <Networks />
       </div>
       <div className="flex items-center justify-between  inset-y-0 bottom-0 h-20 bg-gradient-to-tr p-2 via-slate-500 to-transparent">
-      <h1 className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer" onClick={() => navigation("/")}>
-            FANS-SERI
-          </h1>
+        <h1
+          className=" px-2 text-black border-4 border-black  inline-block text-2xl font-serif rounded-xl font-semibold md:text-3xl cursor-pointer"
+          onClick={() => navigation("/")}
+        >
+          FANS-SERI
+        </h1>
         <div className="hidden md:flex text-cyan-100 text-2xl font-llora relative">
           <HeadersLink />
         </div>
@@ -65,7 +69,7 @@ function ShowTshirtView() {
       >
         <HeadersLinkMovil />
       </div>
-      <h1 className=" flex justify-center text-gray-800 m-5 text-5xl font-llora">
+      <h1 className=" flex justify-center text-gray-800 m-5 md:text-4xl text-3xl font-llora">
         -Muestra de {Article}-
       </h1>
       {Article === "T-shirt" && (
@@ -99,14 +103,12 @@ function ShowTshirtView() {
 
       {Article === "Polo" && (
         <div className="flex flex-wrap justify-center">
-          <img src={Polo1} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
-          <img src={polo2} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
-          <img src={Polo3} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
-          <img src={polo4} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
-          <img src={polo5} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
-          <img src={Polo6} alt="t-shirt" className="w-96 m-4 p-4 p-4" />
-
-          
+          <img src={Polo1} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={polo2} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Polo3} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={polo4} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={polo5} alt="t-shirt" className="w-96 m-4 p-4" />
+          <img src={Polo6} alt="t-shirt" className="w-96 m-4 p-4" />
         </div>
       )}
 
@@ -122,6 +124,6 @@ function ShowTshirtView() {
       )}
     </div>
   );
-}
+};
 
 export default ShowTshirtView;

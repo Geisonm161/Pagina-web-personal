@@ -11,7 +11,7 @@ import Textarea from "../../Components/Textarea/Textarea";
 import { setItem } from "../../services/servicesLocalStorage/servicesLocalStorage";
 import Input from "../../Components/Input/Input";
 
-function OrderView() {
+const OrderView = () => {
   const [changeIcons, setChangeIcons] = useState();
   const navigation = useNavigate();
 
